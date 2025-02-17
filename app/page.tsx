@@ -1,4 +1,4 @@
-import Card from "./lib/ui/home/card"
+import Card from "./lib/ui/home/Card"
 
 function Home() {
   return (
