@@ -42,5 +42,5 @@ function Card({
     </div>
   );
 }
-
-export default Card;
+//  export
+export default Card; 
