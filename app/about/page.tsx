@@ -4,7 +4,7 @@ import Card from '../lib/ui/about/Card'
 function page() {
   return (
     <div className="mx-auto flex flex-col items-center justify-center gap-20 m-10">
-      <h1 className='text-4xl font-bold'>ABOUT ME</h1>
+      <h1 className='text-6xl font-bold'>About me</h1>
       <Card
         title={"Introduction"}
         description={

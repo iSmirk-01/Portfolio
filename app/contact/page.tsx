@@ -23,7 +23,7 @@ function Contact() {
 
   return (
     <main className="flex flex-col items-center text-lg lg:text-xl font-medium text-white gap-20 my-8">
-      <h1 className="text-4xl">Contacts</h1>
+      <h1 className="text-6xl font-bold">Contacts</h1>
       <div className="flex flex-col gap-6 w-full items-center">
         <ButtonLink
           href={"mailto:federicoaguirre134@gmail.com"}
