@@ -22,7 +22,7 @@ function Card({
   link = "/"
 }: Props) {
   return (
-    <div className="grid lg:grid-cols-[65%,35%] bg-white/70 backdrop-blur-lg dark:bg-transparent dark:border dark:border-white rounded overflow-hidden w-[80%] 2xl:max-w-7xl mx-auto min-h-96 shadow-lg">
+    <div className="grid lg:grid-cols-[65%,35%] bg-white/90 backdrop-blur-lg dark:bg-transparent dark:border dark:border-white rounded overflow-hidden w-[80%] 2xl:max-w-7xl mx-auto min-h-96 shadow-lg">
       <Image
         src={imageSrc}
         alt={imageAlt}

@@ -10,7 +10,7 @@ function NavBar() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <nav className="flex items-center justify-between px-20 h-24 tracking-widest">
+    <nav className="flex items-center justify-between px-20 h-24 tracking-widest backdrop-blur  sticky top-0 z-50">
       <TheneToggle />
       <div className="hidden gap-5 sm:flex font-semibold text-lg">
         <NavLink href={"/"} label={"Home"} />
