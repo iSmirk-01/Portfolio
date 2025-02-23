@@ -1,7 +1,8 @@
 "use client"
 
-import Link from 'next/link'
 import { useState } from 'react'
+import ButtonLink from '../lib/ui/contact/ButtonLink';
+import Button from '../lib/ui/contact/Button';
 
 function Contact() {
     const [isCopied, setIsCopied] = useState<boolean>(false);
@@ -18,22 +19,33 @@ function Contact() {
 
   return (
     <main>
-      <div className="flex flex-col items-center gap-5 text-lg lg:text-xl">
-        <Link href={"mailto:federicoaguirre134@gmail.com"} target="_blank"
-        className='border px-4 py-2 w-[7.5rem] rounded text-center'>
-            Email
-        </Link>
-        <Link href={"https://www.instagram.com/ismirk8"} target='_blank'>
-            Instagram
-        </Link>
-        <Link href={"https://github.com/ismirk-01"} target="_blank">
-            Github
-        </Link>
-        <button className={`${isCopied ? "" : ""}`} onClick={hadnleCopy}>
-            {isCopied ? "Copied!" : "Discord"}
-        </button>
+      <div className="flex flex-col items-center gap-5 text-lg lg:text-xl font-medium text-white">
+        <ButtonLink
+          href={"mailto:federicoaguirre134@gmail.com"}
+          text={"Email"}
+          className={
+            "bg-red-500/80 backdrop-blur"
+          }
+        />
+        <ButtonLink
+          href={"https://www.instagram.com/ismirk8"}
+          text={"Instagram"}
+          className={
+            "bg-gradient-to-r from-[#feda75]/60 via-[#d62976]/60 to-[#4f5bd5]/60 backdrop-blur"
+          }
+        />
+        <ButtonLink
+          href={"https://github.com/ismirk-01"}
+          text={"Github"}
+          className={"bg-[#181717]"}
+        />
+        <Button
+          text={isCopied ? "Copied!" : "Discord"}
+          className={`${isCopied ? "" : ""} bg-[#5865F2]`}
+          onClick={hadnleCopy}
+        />
       </div>
-    </main>         
+    </main>
   );
 }
 
