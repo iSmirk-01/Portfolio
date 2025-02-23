@@ -1,19 +1,31 @@
 import Link from 'next/link'
+import Image from 'next/image';
 
 interface Props {
     href: string;
     text: string;
     className: string;
+    icon: string;
+    iconCss?: string
 }
 
-function ButtonLink({ href, text, className }: Props) {
+function ButtonLink({ href, text, className, icon, iconCss }: Props) {
   return (
     <Link
-    href={href}
-      className={`${className} cursor-pointer border min-w-[10rem] max-w-[45rem] w-[60%] py-4 rounded text-center`}
-      target="_blank"
+      className={`${className} cursor-pointer border min-w-[10rem] max-w-[45rem] w-[60%] py-4 rounded flex items-center justify-center gap-3 px-auto px-4 h-14`}
+      href={href}
+      target='_blank'
     >
-      {text}
+      <Image
+        src={icon}
+        alt={"discord icon"}
+        width={24}
+        height={24}
+        className={`${iconCss} w-6 h-6`}
+      />
+        <div className='text-start min-w-20'>
+          {text}
+        </div>
     </Link>
   );
 }
