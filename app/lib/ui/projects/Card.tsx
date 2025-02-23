@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { bebas_neue } from "../../fonts";
 
 interface Props {
   imageSrc: string | StaticImageData;
@@ -21,17 +22,24 @@ function Card({
   link = "/"
 }: Props) {
   return (
-    <div className="grid lg:grid-cols-2 place-content-center dark:bg-slate-900/50 backdrop-blur rounded overflow-hidden mx-2 w-[80%] 2xl:max-w-7xl lg:gap-20">
+    <div className="grid lg:grid-cols-[65%,35%] bg-white/70 backdrop-blur-lg dark:bg-transparent dark:border dark:border-white rounded overflow-hidden w-[80%] 2xl:max-w-7xl mx-auto min-h-96 shadow-lg">
       <Image
         src={imageSrc}
         alt={imageAlt}
         className=" object-fill h-full flex-1"
       />
-      <div className="flex flex-col items-center justify-center gap-7 px-6 py-8">
-        <h1>{title}</h1>
+      <div className="flex flex-col items-center justify-center gap-7 px-6 py-8 tracking-wider">
+        <h1 className="text-4xl">{title}</h1>
         <div className="flex flex-col items-center gap-4">
-          <h2 className="max-w-md text-center leading-relaxed">{description}</h2>
-          <Link href={link}>Visit website here</Link>
+          <h2 className="max-w-md text-center leading-relaxed text-xl">
+            {description}
+          </h2>
+          <Link
+            href={link}
+            className={`${bebas_neue.className} underline-offset-4 underline tracking-wide hover:text-blue-300 focus:text-blue-300 active:text-blue-600 text-blue-400 text-lg`}
+          >
+            Visit website here
+          </Link>
         </div>
         <div className="flex items-center justify-around gap-8 ">
           {icons.map((Icon, index) => (

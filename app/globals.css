@@ -10,7 +10,7 @@
 .dark {
   --background: #121212;
   --foreground: #E0E0E0;
-  background-image: url('/Polygon Dark.svg');
+  background-image: url('/darkpoly.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 
 /* Light Mode */
 .light {
-  background-image: url('/Polygon Light.svg');
+  background-image: url('/lightpolyblue.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

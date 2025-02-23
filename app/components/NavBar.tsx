@@ -10,9 +10,9 @@ function NavBar() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <nav className="flex items-center justify-between px-20 h-24">
+    <nav className="flex items-center justify-between px-20 h-24 tracking-widest">
       <TheneToggle />
-      <div className="hidden gap-5 sm:flex">
+      <div className="hidden gap-5 sm:flex font-semibold text-lg">
         <NavLink href={"/"} label={"Home"} />
         <NavLink href={"/projects"} label={"Projects"} />
         <NavLink href={"/about"} label={"About"} />
@@ -31,14 +31,16 @@ function NavBar() {
             : "fixed left-[-100] top-0 bottom-0 h-full ease-out duration-300"
         } sm:hidden flex`}
       >
-        <div className='flex sm:hidden h-full flex-col w-full justify-start items-center gap-20 px-7 py-2'>
-            <button className='self-end' onClick={() => setIsOpen(!isOpen)}><X /></button>
-            <div className="flex sm:hidden flex-col items-center justify-center gap-20">
-              <NavLink href={"/"} label={"Home"} />
-              <NavLink href={"/projects"} label={"Projects"} />
-              <NavLink href={"/about"} label={"About"} />
-              <NavLink href={"/contact"} label={"Contact"} />
-            </div>
+        <div className="flex sm:hidden h-full flex-col w-full justify-start items-center gap-20 px-7 py-2">
+          <button className="self-end" onClick={() => setIsOpen(!isOpen)}>
+            <X />
+          </button>
+          <div className="flex sm:hidden flex-col items-center justify-center gap-20 font-semibold text-lg">
+            <NavLink href={"/"} label={"Home"} />
+            <NavLink href={"/projects"} label={"Projects"} />
+            <NavLink href={"/about"} label={"About"} />
+            <NavLink href={"/contact"} label={"Contact"} />
+          </div>
         </div>
       </div>
     </nav>

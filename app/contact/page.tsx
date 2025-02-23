@@ -18,8 +18,9 @@ function Contact() {
 
   return (
     <main>
-      <div className="flex flex-col items-center gap-5">
-        <Link href={"mailto:federicoaguirre134@gmail.com"} target="_blank">
+      <div className="flex flex-col items-center gap-5 text-lg lg:text-xl">
+        <Link href={"mailto:federicoaguirre134@gmail.com"} target="_blank"
+        className='border px-4 py-2 w-[7.5rem] rounded text-center'>
             Email
         </Link>
         <Link href={"https://www.instagram.com/ismirk8"} target='_blank'>

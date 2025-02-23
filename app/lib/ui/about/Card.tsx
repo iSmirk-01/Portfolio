@@ -5,9 +5,9 @@ interface Props {
 
 function Card({ title, description }: Props) {
   return (
-    <div className="min-h-64 bg-slate-800/40 backdrop-blur flex flex-col items-center gap-10 py-8 px-4 w-[70%] max-w-6xl rounded">
-      <h1>{title}</h1>
-      <p className="max-w-4xl leading-relaxed">{description}</p>
+    <div className="min-h-64 dark:bg-transparent bg-white/40 dark:border shadow-lg backdrop-blur flex flex-col items-center gap-10 py-8 px-4 w-[70%] max-w-6xl rounded ">
+      <h1 className="text-3xl tracking-widest font-bold">{title}</h1>
+      <p className="max-w-4xl leading-relaxed text-lg lg:text-xl tracking-wider font-medium">{description}</p>
     </div>
   )
 }

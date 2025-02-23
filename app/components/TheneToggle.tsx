@@ -17,7 +17,7 @@ function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-      className="flex items-center justify-center p-2 rounded-full transition-colors duration-300 ease-in-out border-2 border-transparent hover:border-gray-300 dark:hover:border-gray-700"
+      className="flex items-center justify-center p-2 rounded-full transition-colors duration-300 ease-in-out border-2 border-transparent hover:border-black dark:hover:border-white"
     >
       {resolvedTheme === "dark" ? (
         <Sun className="text-yellow-400 w-6 h-6" />

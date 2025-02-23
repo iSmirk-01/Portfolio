@@ -4,11 +4,12 @@ import Card from '../lib/ui/about/Card'
 function page() {
   return (
     <div className="mx-auto flex flex-col items-center justify-center gap-20 m-10">
+      <h1 className='text-4xl font-bold'>ABOUT ME</h1>
       <Card
         title={"Introduction"}
         description={
           "I'm a self-taught developer passionate about building modern, high-performance applications. I focus on creating fast, optimized projects with clean UI/UX. I'm also exploring AI development as I expand my skill set."
-        }
+        } 
       />
 
       <Card
