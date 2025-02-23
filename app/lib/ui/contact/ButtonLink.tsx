@@ -12,7 +12,7 @@ interface Props {
 function ButtonLink({ href, text, className, icon, iconCss }: Props) {
   return (
     <Link
-      className={`${className} cursor-pointer border min-w-[10rem] max-w-[45rem] w-[60%] py-4 rounded flex items-center justify-center gap-3 px-auto px-4 h-14`}
+      className={`${className} cursor-pointer border min-w-[10rem] max-w-[45rem] w-[60%] py-4 rounded flex items-center justify-center gap-3 px-4 h-14`}
       href={href}
       target='_blank'
     >
@@ -23,7 +23,7 @@ function ButtonLink({ href, text, className, icon, iconCss }: Props) {
         height={24}
         className={`${iconCss} w-6 h-6`}
       />
-        <div className='text-start min-w-20'>
+        <div className='text-start min-w-28'>
           {text}
         </div>
     </Link>
