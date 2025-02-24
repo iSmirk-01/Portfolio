@@ -15,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({ text, className = "", onClick }) => {
       onClick={onClick}
       
     >
-      <Image src={"/discord.svg"} alt={""} width={24} height={24} className="ml-5" />
+      <Image src={"/discord.svg"} alt={""} width={24} height={24} className="ml-10" />
       <div className="text-start min-w-28">{text}</div>
     </button>
   );
