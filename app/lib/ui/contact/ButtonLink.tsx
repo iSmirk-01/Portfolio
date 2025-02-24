@@ -21,9 +21,9 @@ function ButtonLink({ href, text, className, icon, iconCss }: Props) {
         alt={"discord icon"}
         width={24}
         height={24}
-        className={`${iconCss} w-6 h-6`}
+        className={`${iconCss} w-6 h-6 ml-5`}
       />
-        <div className='text-start min-w-28'>
+        <div className='min-w-28'>
           {text}
         </div>
     </Link>

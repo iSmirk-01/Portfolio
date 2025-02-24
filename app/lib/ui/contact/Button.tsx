@@ -11,11 +11,11 @@ const Button: React.FC<ButtonProps> = ({ text, className = "", onClick }) => {
 
   return (
     <button
-      className={`${className} cursor-pointer border min-w-[10rem] max-w-[45rem] w-[60%] py-4 rounded flex items-center justify-center gap-3 max-h-56`}
+      className={`${className} cursor-pointer border min-w-[10rem] max-w-[45rem] w-[60%] py-3 rounded flex items-center justify-center gap-3 h-[56px]`}
       onClick={onClick}
       
     >
-      <Image src={"/discord.svg"} alt={""} width={24} height={24} />
+      <Image src={"/discord.svg"} alt={""} width={24} height={24} className="ml-5" />
       <div className="text-start min-w-28">{text}</div>
     </button>
   );
