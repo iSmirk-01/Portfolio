@@ -36,6 +36,7 @@ function NavBar() {
       <button
         className="sm:hidden flex cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
+        aria-label='Open menu'
       >
         <Menu />
       </button>
@@ -47,7 +48,9 @@ function NavBar() {
         } sm:hidden flex z-20`}
       >
         <div className="flex sm:hidden h-full flex-col w-full justify-start items-center gap-20 px-7 py-2">
-          <button className="self-end" onClick={() => setIsOpen(!isOpen)}>
+          <button className="self-end" 
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label='Close menu'>
             <X />
           </button>
           <div className="flex sm:hidden flex-col items-center justify-center gap-20 font-semibold text-lg">
