@@ -1,3 +1,5 @@
+"use client"
+
 export const NextjsIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg viewBox="0 0 128 128" width="100%" height="100%" {...props}>
