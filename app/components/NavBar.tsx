@@ -14,7 +14,7 @@ function NavBar() {
     }
 
   return (
-    <nav className="flex items-center justify-between px-20 h-24 tracking-widest backdrop-blur sticky top-0 z-10">
+    <nav className="flex items-center justify-between px-20 h-24 tracking-widest backdrop-blur dark:bg-gradient-to-t dark:to-red-500/60 dark:from-transparent sticky top-0 z-10 ">
       <TheneToggle />
       <div className="hidden gap-5 sm:flex font-semibold text-lg">
         <NavLink 

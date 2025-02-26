@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* light default */
 :root {
   --background: #F8F8F8;
   --foreground: #333333;
@@ -11,20 +12,5 @@
 html.dark {
   --background: #121212;
   --foreground: #E0E0E0;
-  background-image: url('/darkpoly.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  width: 100%;
 }
 
-/* Light Mode */
-html {
-  background-image: url('/lightpolyblue.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  width: 100%;
-}

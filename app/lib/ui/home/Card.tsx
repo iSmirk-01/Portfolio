@@ -7,7 +7,7 @@ function Card() {
   const link_styles =
     "underline-offset-4 underline tracking-wide hover:text-blue-300 focus:text-blue-300 active:text-blue-600 text-blue-400";
   return (
-    <main className="grid md:grid-cols-2 place-content-center dark:bg-transparent dark:border dark:border-white px-4 py-10 md:px-0 md:py-0 gap-7 min-h-max mx-4 max-h-max rounded overflow-hidden shadow-lg bg-white/70 text-gray-900 dark:text-zinc-100 font-medium backdrop-blur">
+    <main className="grid md:grid-cols-2 place-content-center dark:bg-transparent dark:border dark:border-white px-4 py-10 md:px-0 md:py-0 gap-7 min-h-max mx-4 max-h-max rounded overflow-hidden shadow-lg bg-white/70 text-gray-900 dark:text-zinc-100 font-medium backdrop-blur-xl">
       <Image
         src={sleekAvatar}
         alt={"An Image of a sleek mannequin"}

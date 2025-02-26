@@ -22,16 +22,16 @@ function Card({
   link = "/"
 }: Props) {
   return (
-    <div className="grid lg:grid-cols-[65%,35%] bg-white/90 backdrop-blur-lg dark:bg-transparent dark:border dark:border-white rounded overflow-hidden w-[80%] 2xl:max-w-7xl mx-auto min-h-96 shadow-lg">
+    <div className="grid lg:grid-cols-[65%,35%] bg-white/90 backdrop-blur-xl dark:bg-transparent dark:border dark:border-white rounded overflow-hidden w-[80%] 2xl:max-w-7xl mx-auto min-h-96 shadow-lg">
       <Image
         src={imageSrc}
         alt={imageAlt}
         className=" object-fill h-full flex-1"
       />
       <div className="flex flex-col items-center justify-center gap-7 px-6 py-8 tracking-wider">
-        <h1 className="text-4xl">{title}</h1>
+        <h1 className="text-5xl">{title}</h1>
         <div className="flex flex-col items-center gap-4">
-          <h2 className="max-w-md text-center leading-relaxed text-xl">
+          <h2 className="max-w-md text-center leading-relaxed text-xl text-[#E0E0E0]">
             {description}
           </h2>
           <Link

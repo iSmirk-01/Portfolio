@@ -20,7 +20,7 @@ export default function BackgroundTransition() {
           <motion.div
             key="dark"
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/darkpoly.svg')" }}
+            style={{ backgroundImage: "url('/darkpaper.svg')" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -30,7 +30,7 @@ export default function BackgroundTransition() {
           <motion.div
             key="light"
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/lightpolyblue.svg')" }}
+            style={{ backgroundImage: "url('/lightpaper.svg')" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
