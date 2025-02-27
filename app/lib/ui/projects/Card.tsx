@@ -45,6 +45,7 @@ function Card({
           <Link
             href={link}
             className={`${bebas_neue.className} underline-offset-4 underline tracking-wide hover:text-blue-300 focus:text-blue-300 active:text-blue-600 text-blue-400 text-lg`}
+            target="_blank"
           >
             Visit website here
           </Link>
