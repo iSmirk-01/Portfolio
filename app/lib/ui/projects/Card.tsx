@@ -37,9 +37,9 @@ function Card({
         className=" object-fill h-full flex-1"
       />
       <div className="flex flex-col items-center justify-center gap-7 px-6 py-8 tracking-wider">
-        <h1 className="text-5xl text-center">{title}</h1>
+        <h1 className="text-5xl text-center font-bold">{title}</h1>
         <div className="flex flex-col items-center gap-4">
-          <h2 className="max-w-md text-center leading-relaxed text-xl text-[#E0E0E0]">
+          <h2 className="max-w-md text-center leading-relaxed text-xl dark:text-[#E0E0E0] font-semibold">
             {description}
           </h2>
           <Link
